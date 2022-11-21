@@ -8,7 +8,7 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
-let myName = "Jasin";
+let myName = "Jason";
 function sayHello(name){
 return "Hello, " + name;
 }
@@ -102,5 +102,7 @@ alert("Your tip should be $" + tipAmount);
  return a * b;
  }
  var originalPrice = prompt("Discount calculator: Original price? ");
- var discountPercent = prompt("Discount amount in decimal: ")
- alert("You saved " + "$" + applyDiscount(originalPrice, discountPercent));
+ var discountPercent = prompt("Enter discount amount in decimal: ");
+ var discounted = applyDiscount(originalPrice, discountPercent);
+ var discountedPrice = discounted.toFixed(2);
+ alert("You saved " + "$" + discountedPrice + "!");
