@@ -99,4 +99,8 @@ alert("Your tip should be $" + tipAmount);
  */
 
  function applyDiscount(a, b){
+ return a * b;
  }
+ var originalPrice = prompt("Discount calculator: Original price? ");
+ var discountPercent = prompt("Discount amount in decimal: ")
+ alert("You saved " + "$" + applyDiscount(originalPrice, discountPercent));
