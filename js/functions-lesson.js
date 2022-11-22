@@ -104,4 +104,4 @@ alert("Your 15% tip is $" + tipAmount.toFixed(2));
  var discountPercent = prompt("Enter discount amount in decimal: ");
  var discounted = applyDiscount(originalPrice, discountPercent);
  var discountedPrice = discounted.toFixed(2);
- alert(`Your discounted price is $${(originalPrice - discountedPrice).toFixed(2)}!`);
+ alert(`Your discounted price is $${(originalPrice - discountedPrice).toFixed(2)}`);
