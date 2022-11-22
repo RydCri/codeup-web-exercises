@@ -81,7 +81,7 @@ console.log(pricePrompt)
 var priceInt = parseInt(pricePrompt);
 
 var tipAmount = calculateTip(priceInt, 0.25);
-alert("Your tip should be $" + tipAmount);
+alert("Your tip should be $" + tipAmount.toFixed(2));
 
 /**
  * TODO:
