@@ -76,12 +76,11 @@ return a * b;
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-var pricePrompt = prompt("Enter your bill total to estimate a polite tip amount")
-console.log(pricePrompt)
+var pricePrompt = prompt("Tip Calculator: Enter your bill total")
 var priceInt = parseInt(pricePrompt);
 
-var tipAmount = calculateTip(priceInt, 0.25);
-alert("Your tip should be $" + tipAmount.toFixed(2));
+var tipAmount = calculateTip(priceInt, 0.15);
+alert("Your 15% tip is $" + tipAmount.toFixed(2));
 
 /**
  * TODO:
@@ -105,4 +104,4 @@ alert("Your tip should be $" + tipAmount.toFixed(2));
  var discountPercent = prompt("Enter discount amount in decimal: ");
  var discounted = applyDiscount(originalPrice, discountPercent);
  var discountedPrice = discounted.toFixed(2);
- alert("You saved " + "$" + discountedPrice + "!");
+ alert("Your discounted price is " + "$" + (originalPrice - discountedPrice).toFixed(2) + "!");
