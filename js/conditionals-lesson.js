@@ -130,12 +130,18 @@ var discountTotal = (calculateTotal(luckyNumber, customerTotal))
  */
  var numConfirm = confirm(`Give me a number?`);
  function boolConfirm(num){
+ let userInput;
  if(num == true) {
- return prompt(`Please enter a number`)}
+ userInput = prompt(`Please enter a number`)
+ return userInput;
+ }
+ if(userInput = NaN){
+ return 'not a number'
+ }
  }
  var promptNum = parseInt(boolConfirm(numConfirm));
  function isEvenOdd(num){
-    if(num == 2 % 0) {
+    if(num % 2 == 0) {
         return "even";
     } else {
    return "odd";
@@ -151,4 +157,12 @@ var discountTotal = (calculateTotal(luckyNumber, customerTotal))
        return "it's negative";
        }
  }
- alert(`${promptNum} is ${isEvenOdd(promptNum)}, its +100 = ${isPlus100(promptNum)}, and ${isPos(promptNum)}`);
+function alertNum(input){
+if(isNaN(input)) {
+return `${input} is not a number`;
+} else {
+return `${input} is ${isEvenOdd(input)}, its +100 = ${isPlus100(input)}, and ${isPos(input)}`;
+}
+}
+
+alert(alertNum(promptNum));
