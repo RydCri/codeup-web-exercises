@@ -1,4 +1,3 @@
-'use strict';
 
 //function showMultiplicationTable(num) {
 //var mult = num;
@@ -28,5 +27,23 @@
 //        console.log(result + ' is odd');
 //     }
 //     }
+
+//for(let i=0; i < 9; i++) {
+// var num = i + 1;
+// var res = `${num}`;
+//  for(let j = 1; j <= i; j++){
+// res += num;
+// }
+// console.log(res);
+//}
+
+//for (let i = 0; i < 9; i++) {
+//let answer = String(i+1).repeat(i+1);
+//console.log(answer);
+//}
+//for(var i = 100; i >= 0; i+= -5){
+//var end = i;
+//console.log(end);
+//}
 
 
