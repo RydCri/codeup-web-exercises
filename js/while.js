@@ -1,4 +1,7 @@
-//
+
+
+
+
 //var allCones = Math.floor(Math.random() * 50) + 50;
 //var sellCone = Math.floor(Math.random() * 5) + 1;
 //
@@ -11,19 +14,16 @@
 //         console.log(`Cannot sell you ${sellCone} cones I only have ${i}...`)
 //}
 
-var allCones = Math.floor(Math.random() * 50) + 50;
-
-for(i=allCones;i>0;i-=sellCone){
-var sellCone = Math.floor(Math.random() * 5) + 1
-console.log(`${i} cones left. buying ${sellCone}cones .`)
-if(i < sellCone) {
-         console.log(`Cannot sell you ${sellCone} cones I only have ${i}...`)
-} else if(i === 0){
-  console.log(`Yay! I sold them all!`)
-  break;
-}
-}
-
+//var allCones = Math.floor(Math.random() * 50) + 50;
+//
+//for(i=allCones;i>0;i-=sellCone){
+//var sellCone = Math.floor(Math.random() * 5) + 1
+//console.log(`${i} cones left. buying ${sellCone}cones .`)
+//if(i === 0){
+//    console.log(`Yay! I sold them all!`)
+//} else if(i < sellCone) {
+//    console.log(`Cannot sell you ${sellCone} cones I only have ${i}...`)
+//}
 
 //`${} cones sold...`  // if there are enough cones
 //`Cannot sell you ${} cones I only have ${}...`  // If there are not enough cones
