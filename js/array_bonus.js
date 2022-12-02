@@ -4,10 +4,17 @@
 //‘input num in input array’ if the second argument is an element in the first argument array
 //otherwise, the function should return the string ‘input num NOT in input array’ (edited)
 
-var foods = ['plum', 'apple', 'spanikopita', 'tolberone', 'orange', 'ugli fruit', 'egg', 'alfredo', 'donut','spam']
+var foods = ['ostrich leg', 'apple', 'emu thigh', 'tolberone', 'orange', 'ugli fruit', 'egg', 'alfredo', 'donut','spam']
 for(var i = 0;i < foods.length; i+=1){
     if(foods[i].startsWith('a') || foods[i].startsWith('e')||foods[i].startsWith('i')||foods[i].startsWith('o')||foods[i].startsWith('u')){
     let vowelFoods = [foods[i]];
     console.log(vowelFoods.sort());
+}
+}
+for(var i = 0;i < foods.length; i+=1){
+    let firstChar = foods[i][0];
+    let vowels = ['a','e','i','o','u']
+     if(vowels.includes(firstChar)){
+console.log(foods[i])
 }
 }
