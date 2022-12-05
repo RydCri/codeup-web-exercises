@@ -25,6 +25,8 @@
      */
 //var planetsBR = planetsArray.join(' <br> ');
 //console.log(planetsBR);
-var planetsList = ("<ul>" + planetsArray[0]) + "<li>" + planetsArray.join("</li><li>") + "</li>" + (planetsArray[planetsArray.length -1] + "</ul>") ;
-console.log(planetsList);
+
+var planetsList = "<li>" + planetsArray.join("</li><li>") + "</li>";
+var ulPlanets = '<ul>' + planetsList + '</ul>';
+console.log(ulPlanets);
 })();
