@@ -49,7 +49,9 @@ const person = {}
      ];
 shoppers.forEach(function(shopper){
     if(shopper.amount > 200){
-     shopper.discount = shopper.amount * .12
+     shopper.discount = (shopper.amount * .12).toFixed(2);
+    } else {
+    shopper.discount = 0;
     }
 })
 
@@ -71,7 +73,13 @@ console.log(`Shopper: ${shopper.name} spent $${shopper.amount} and saved $${shop
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-
+const books =
+[{title: `A Goblin's Summer Job`, author: `Tansir Bututa`},
+{title: `Wish Upon: A DoorDash Novel`, author: `Murray Hupangitit`},
+{title: `My Life is a Lie`, author: `Todd Howard`},
+{title: `Craymonomics`, author: `Sleven Devit`},
+{title: `A New York Times Besteller`, author: `W. W. Clarence`}
+];
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -96,6 +104,10 @@ console.log(`Shopper: ${shopper.name} spent $${shopper.amount} and saved $${shop
      *      ---
      *      ...
      */
+     books.forEach(function(book,index){
+     var log = `${book.title}\n${book.author}\n---`;
+console.log(`Book #${1+index}\n${log}`)
+})
 
     /**
      * Bonus:
@@ -107,4 +119,16 @@ console.log(`Shopper: ${shopper.name} spent $${shopper.amount} and saved $${shop
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+function createBook(obj){
+var askTitle = prompt(`Input TITLE of book to enter into books collection`)
+var askAuthor = prompt(`Input AUTHOR of book to enter into books collection`)
+var newBook = {title: askTitle,author: askAuthor}
+obj.push(newBook);
+}
+createBook(books);
+console.log(books)
 
+     books.forEach(function(book,index){
+     var log = `${book.title}\n${book.author}\n---`;
+console.log(`Book # ${1+index}\n${log}`)
+})

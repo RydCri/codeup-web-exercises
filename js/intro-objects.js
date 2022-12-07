@@ -37,8 +37,8 @@
    ];
 
   // 1. Log the names of all users in a single console log separated by spaces. // output = "Sam Cathy Karen"
-//Object.values(users).forEach(val => {
-//  console.log(val);
+//users.forEach(val => {
+//  console.log(val.givenName);
 //});
   // 2. Change the names of all users to "John Doe"
 //users.forEach(function(user){
@@ -51,18 +51,13 @@
 //})
   // Can you accomplish each step using iteration?
 //users.forEach(function(user){
-//user.givenName = ('John Doe');
-//user.age += 1;
-//console.log(users);
+//user.givenName = ('John Doe')
+//let result = user.age += 1;
+//
+//console.log(user)
 //})
 //
 //  // Extras...
 //    // log the total of all the ages
 //    // log the average age of all users
 //    // log all the user information in the following format...
-//users.forEach(function(user){
-//user.givenName = ('John Doe')
-//let result = user.age += 1;
-//
-//console.log(user)
-//})

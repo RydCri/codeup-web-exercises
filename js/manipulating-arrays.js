@@ -211,19 +211,6 @@
     5. Log an array of just the first two students in the row (left to right)
     6. Log everyone in the row in a single string separated by spaces
     7. Log everyone in the row in a single string separated by underscores
- */
-const names = ['hung','jason','alexia','jiabin'];
-names.sort();
-names.reverse();
-names.reverse();
-names.slice(0,2);
-names.split(' ');
-names.join();
-names.split('_')
-console.log(names)
-
-
-
 
 
 
@@ -292,19 +279,21 @@ console.log(names)
 
 // ** Create a function that will take in a formatted string of numbers and return an array of phone numbers without any symbols. Console.log the output of the returned array.
 
-/* EXAMPLE...
+
 
     const phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
-
+    function cleanPhoneNumbers(nums){
+    var split = nums.split('-').join('')
+    console.log(split)
+    }
     cleanPhoneNumbers(phoneNumbers);
 
-    the above code should output the following...
-
-       2105552020
-       2305552020
-       5125553030
-
-*/
+//    the above code should output the following...
+//
+//       2105552020
+//       2305552020
+//       5125553030
+//
 
 // const phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
 
