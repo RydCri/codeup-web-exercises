@@ -50,12 +50,12 @@
 //console.log(users);
 //})
   // Can you accomplish each step using iteration?
-//users.forEach(function(user){
-//user.givenName = ('John Doe')
-//let result = user.age += 1;
-//
-//console.log(user)
-//})
+users.forEach(function(user){
+user.givenName = ('John Doe')
+let result = user.age += 1;
+
+console.log(user)
+})
 //
 //  // Extras...
 //    // log the total of all the ages
