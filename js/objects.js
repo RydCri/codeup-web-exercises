@@ -56,10 +56,8 @@ shoppers.forEach(function(shopper){
 })
 
 shoppers.forEach(function(shopper){
-console.log(`Shopper: ${shopper.name} had a bill $${shopper.amount} spent $${(shopper.amount - shopper.discount).toFixed(2)} and saved $${shopper.discount}!`)
+console.log(`Shopper: ${shopper.name} had a bill $${shopper.amount} spent $${(shopper.amount - shopper.discount)} and saved $${shopper.discount}!`)
 })
-
-
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -78,7 +76,7 @@ const books =
 {title: `Wish Upon: A DoorDash Novel`, author: `Murray Hupangitit`},
 {title: `My Life is a Lie`, author: `Todd Howard`},
 {title: `Craymonomics`, author: `Sleven Devit`},
-{title: `A New York Times Besteller`, author: `W. W. Clarence`}
+{title: `A New York Times Bestseller`, author: `W. W. Clarence`}
 ];
     /**
      * TODO:
