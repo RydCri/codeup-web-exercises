@@ -254,23 +254,28 @@ let someArray = [40,30,20,10,0]
     1. Loop through your classmates array with a for loop.
     2. Loop through your classmates array with a forEach loop.
  */
-let classmates = ["jim","tim","bim","jom","tom","bom","freddy"];
-      for (let i = 0; i < classmates.length; i += 1) {
-          console.log(classmates[i]);
-      }
-        classmates.forEach(function(classmate) {
-   console.log(classmate)
-   })
-       classmates.forEach(function(a,b,c){
-           console.log(a);
-       });
-       for(let i = 0 in classmates) {
-       i += classmates
-       console.log(i)
-       }
+//let classmates = ["jim","tim","bim","jom","tom","bom","freddy"];
+//      for (let i = 0; i < classmates.length; i += 1) {
+//          console.log(classmates[i]);
+//      }
+//        classmates.forEach(function(classmate) {
+//   console.log(classmate)
+//   })
+//       classmates.forEach(function(a,b,c){
+//           console.log(a);
+//       });
+//       for(let i = 0 in classmates) {
+//       i += classmates
+//       console.log(i)
+//       }
 // ============================= ARRAYS AND FUNCTIONS EXAMPLES
 
 // !! Write a function, logNums, that takes in an array and logs each number in the array !!
 // !! Write a function, returnLongString, that takes in an array of strings and returns all strings concatenated together !!
 // !! Write a function, returnArrSum, that takes in an array of values and returns the sum of all number elements !!
+numArray = [1,2,34,5,6,43,2,13,5];
 
+Array.forEach(function logNums(e, i, a){
+console.log(e)
+})
+logNums(numArray)
