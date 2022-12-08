@@ -56,7 +56,7 @@ shoppers.forEach(function(shopper){
 })
 
 shoppers.forEach(function(shopper){
-console.log(`Shopper: ${shopper.name} spent $${shopper.amount} and saved $${shopper.discount}!`)
+console.log(`Shopper: ${shopper.name} had a bill $${shopper.amount} spent $${(shopper.amount - shopper.discount).toFixed(2)} and saved $${shopper.discount}!`)
 })
 
 
