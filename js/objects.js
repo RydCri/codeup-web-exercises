@@ -56,7 +56,7 @@ shoppers.forEach(function(shopper){
 })
 
 shoppers.forEach(function(shopper){
-console.log(`Shopper: ${shopper.name} had a bill $${shopper.amount} spent $${(shopper.amount - shopper.discount)} and saved $${shopper.discount}!`)
+console.log(`Shopper: ${shopper.name} had a bill $${shopper.amount} spent $${(shopper.amount - shopper.discount).toFixed(2)} and saved $${shopper.discount}!`)
 })
 
     /** TODO:
@@ -71,12 +71,12 @@ console.log(`Shopper: ${shopper.name} had a bill $${shopper.amount} spent $${(sh
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-const books =
-[{title: `A Goblin's Summer Job`, author: `Tansir Bututa`},
-{title: `Wish Upon: A DoorDash Novel`, author: `Murray Hupangitit`},
-{title: `My Life is a Lie`, author: `Todd Howard`},
-{title: `Craymonomics`, author: `Sleven Devit`},
-{title: `A New York Times Bestseller`, author: `W. W. Clarence`}
+const books =[
+{title: "A Goblin's Summer Job", author: {firstName: 'Tansir',lastName: 'Bututa'}},
+{title: `Wish Upon: A DoorDash Novel`, author: {firstName: `Murray`,lastName: `Hupangitit`}},
+{title: `My Life is a Lie`, author: {firstName: `Todd`,lastName: `Howard`}},
+{title: `Craymonomics`, author: {firstName: `Sleven`,lastName:`Devit`}},
+{title: `A New York Times Bestseller`, author: {firstName: `W. W.`,lastName: `Clarence`}}
 ];
     /**
      * TODO:
@@ -103,7 +103,7 @@ const books =
      *      ...
      */
      books.forEach(function(book,index){
-     var log = `${book.title}\n${book.author}\n---`;
+     var log = `Title: ${book.title}\nAuthor: ${book.author.firstName} ${book.author.lastName}\n---`;
 console.log(`Book #${1+index}\n${log}`)
 })
 
@@ -119,14 +119,15 @@ console.log(`Book #${1+index}\n${log}`)
      */
 function createBook(obj){
 var askTitle = prompt(`Input TITLE of book to enter into books collection`)
-var askAuthor = prompt(`Input AUTHOR of book to enter into books collection`)
-var newBook = {title: askTitle,author: askAuthor}
+var askAuthorF = prompt(`Input AUTHOR's FIRST NAME of book to enter into books collection`)
+var askAuthorL = prompt(`Input AUTHOR's LAST NAME of book to enter into books collection`)
+var newBook = {title: askTitle,author: {firstName: askAuthorF, lastName: askAuthorL}}
 obj.push(newBook);
 }
 createBook(books);
 console.log(books)
 
      books.forEach(function(book,index){
-     var log = `${book.title}\n${book.author}\n---`;
+     var log = `Title: ${book.title}\nAuthor: ${book.author.firstName} ${book.author.lastName}\n---`;
 console.log(`Book # ${1+index}\n${log}`)
 })
