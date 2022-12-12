@@ -8,15 +8,19 @@
 <h2>Register With Us</h2>
 <main>
   <form method="POST" action="https://request-inspector.glitch.me/">
-      <label for="username">Username</label>
-      <input name="username" id="username" type="text" placeholder="Enter username"><br>
+      <label for="email">Email</label>
+      <input name="email" id="email" type="email" placeholder="Enter email"><br>
       <label for="password">Password</label>
       <input name="password" id="password" type="password" placeholder="Enter password">
       <br>
-      <textarea name="bio" placeholder="Tell us something about yourself"></textarea>
-      <h3>How did you hear about us?</h3>
+      <label for="bio">Bio:</label><br>
+      <textarea name="bio" id="bio" rows="10" cols="30" placeholder="Tell us something about yourself"></textarea>
+
+
+      <fieldset>
+          <legend>How did you hear about us?</legend>
       <label for="billboard">
-          Billboard <input id="billboard" type="checkbox" name="question" value="billboard"><br>
+          Billboard <input id="billboard" type="checkbox" name="referral question" value="billboard"><br>
       </label>
       <label for="radio">
           Radio Advertisement <input id="radio" type="checkbox" name="question" value="radio"><br>
@@ -27,6 +31,8 @@
       <label for="other">
           Other <input id="other" type="checkbox" name="question" value="other"><br>
       </label>
+      </fieldset>
+      <br>
       <label for="browser">What web browser are you using?</label>
       <select id="browser" name="browser">
           <option value="safari">Safari</option>
