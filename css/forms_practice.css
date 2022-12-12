@@ -1,0 +1,15 @@
+.labelBelow {
+    font-size: .75em;
+    margin-top: 1px;
+    margin-left: 2px;
+    display: block;
+    word-break: break-word;
+}
+
+.labelAbove {
+    font-size: 1em;
+    margin-top: 11px;
+    margin-left: 2px;
+    display: block;
+    word-break: break-word;
+}
