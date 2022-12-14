@@ -26,7 +26,7 @@ fieldset {
 
 .width-80 {
     width 80%;/* The element with this class should be 80% of the width and it must be centered */
-    align-center;/* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
+    align-content: center;/* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
 }
 
 .form-group {
