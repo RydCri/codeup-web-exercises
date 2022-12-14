@@ -1,4 +1,58 @@
+
     .fancy-header {
             color: violet;
             text-decoration: underline;
         }
+body {
+  background-color: #888;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+    .colorP {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    background: blue;
+    }
+    .colorG {
+    color: white;
+    font-size:50px;
+  height: 350px;
+  background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+  }
+.colorG {
+  font-size:50px;
+  text-shadow: 2px 2px;
+    background-image:
+      linear-gradient(to right, red,orange,yellow,white,green,blue,indigo,black,violet, red);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    animation: colorG 55s linear infinite;
+  }
+
+  @keyframes colorG {
+      to {
+          background-position: 4500vh;
+      }
+  }
+
+  .boxspin {
+  height: 400px;
+  width: 400px;
+  background-color: orange;
+  border:solid 1px;
+  -webkit-transition: all ease-in infinite;
+  }
+
+    @keyframes boxspin {
+          0%   {transform: scale(1)  rotate(0deg);}
+          25%  {transform: scale(2) rotate(120deg);}
+          50%  {transform: scale(.5) rotate(240deg);}
+          100% {transform: scale(1) rotate(360deg);}
+      }
+
+      .boxspin{
+          animation: boxspin 8s ease-in-out;
+      }
