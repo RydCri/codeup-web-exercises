@@ -1,0 +1,41 @@
+* {
+font-family: Montserrat, Work Sans;
+box-sizing: border-box;
+color: white;
+}
+
+body {
+background: black;
+}
+.container {
+    min-width: 768px;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.top-footer {
+display: flex;
+}
+}
+footer .icon-wrapper:hover,
+footer .top-footer a:hover {
+    color: black;
+    background: white;
+}
+.logo-div {
+font-size: 3em;
+padding: .2em
+margin-left auto;
+margin-right auto;
+}
+
+a {
+display: inline-block
+}
+h5 {
+margin-bottom: auto;}
+
+ul {
+list-style: none;
+justify-content: center;
+}
