@@ -119,3 +119,26 @@
 //return longest;
 //}
 //console.log(LongestPetName(pets)) // returns 'Mr. Salmon'
+
+//Write a function, returnLastTwoChars that returns the last two characters of an input string. Assume a string input of at least two characters.
+
+
+function returnLastTwoChars(input) {
+return input.substring(input.length - 2);
+}
+console.log(returnLastTwoChars("cat")); // returns ‘at’
+console.log(returnLastTwoChars('hello')); // returns ‘lo’
+console.log(returnLastTwoChars('hi')); // returns ‘hi’
+
+
+//function returnLastCharsReversed(str, num) {
+//return str.split('').reverse().slice(0, num).join('');
+//
+//}
+//console.log(returnLastCharsReversed("cat", 0)) // returns ‘’
+//console.log(returnLastCharsReversed("cat", 1)) // returns ‘t’
+//console.log(returnLastCharsReversed("cat", 2)) // returns ‘ta’
+//console.log(returnLastCharsReversed("cat", 3)) // returns ‘tac’
+//console.log(returnLastCharsReversed('codeup', 1)) // returns ‘p’
+//console.log(returnLastCharsReversed('codeup', 3)) // returns ‘pue’
+//console.log(returnLastCharsReversed('codeup', 4)) // returns ‘pued’
