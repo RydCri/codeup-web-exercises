@@ -1,0 +1,37 @@
+
+.userFavi {
+width:20px;
+height:20px;
+align-self:center;
+}
+.jumbotron {
+height: 346px;
+background-image: url("/img/pizza-jumbo.png");
+background-size: cover;
+}
+.jumbotron h1 {
+background-color: rgba(255,255,255,.6);
+position: absolute;
+width: 100%;
+  left: 50%!important;
+  z-index: 10;
+  text-align: center;
+  top: 50%!important;
+  transform: translate(-50%, -50%);
+}
+.tabC {
+padding:4px 8px 4px;
+width:10px;
+border-radius:25px;
+background-color: #888;
+color: white;
+}
+.tabH {
+padding:4px;
+border-radius:4px;
+background-color: rgb(49,108,244);
+color:white;
+}
+.brList {
+border:none;
+}
