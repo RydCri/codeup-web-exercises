@@ -142,3 +142,18 @@ console.log(returnLastTwoChars('hi')); // returns ‘hi’
 //console.log(returnLastCharsReversed('codeup', 1)) // returns ‘p’
 //console.log(returnLastCharsReversed('codeup', 3)) // returns ‘pue’
 //console.log(returnLastCharsReversed('codeup', 4)) // returns ‘pued’
+
+function iBeforeE(input){
+if(input.includes('ei')) {
+return input.split('ei').join('ie');
+} else {
+return input;
+}
+}
+
+
+console.log(iBeforeE('ei')); // returns ‘ie’
+console.log(iBeforeE('height')) // returns ‘hieght’
+console.log(iBeforeE('heist')) // returns ‘hiest’
+console.log(iBeforeE('toetoi')) // returns ‘thier’
+console.log(iBeforeE('theirtheir')) // returns ‘thierthier’
