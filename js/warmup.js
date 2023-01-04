@@ -163,6 +163,6 @@
 //function filterList(array){
 //return array.filter(Number);
 //}
-//console.log(filterList([1,2,‘a’,‘b’])); // returns [1,2]
-//filterList([1,‘a’,‘b’,0,15]) // returns [1,0,15]
-//filterList([1,2,‘aasf’,‘1’,‘123’,123]) // returns [1,2,123]
+//console.log(filterList([1,2,'a','b'])); // returns [1,2]
+//console.log(filterList([1,'a','b',0,15])); // returns [1,0,15]
+//console.log(filterList([1,2,'aasf','1','123',123])); // returns [1,2,123]
