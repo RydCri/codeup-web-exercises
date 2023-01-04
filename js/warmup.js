@@ -122,13 +122,13 @@
 
 //Write a function, returnLastTwoChars that returns the last two characters of an input string. Assume a string input of at least two characters.
 
-
-function returnLastTwoChars(input) {
-return input.substring(input.length - 2);
-}
-console.log(returnLastTwoChars("cat")); // returns ‘at’
-console.log(returnLastTwoChars('hello')); // returns ‘lo’
-console.log(returnLastTwoChars('hi')); // returns ‘hi’
+//
+//function returnLastTwoChars(input) {
+//return input.substring(input.length - 2);
+//}
+//console.log(returnLastTwoChars("cat")); // returns ‘at’
+//console.log(returnLastTwoChars('hello')); // returns ‘lo’
+//console.log(returnLastTwoChars('hi')); // returns ‘hi’
 
 
 //function returnLastCharsReversed(str, num) {
@@ -143,17 +143,26 @@ console.log(returnLastTwoChars('hi')); // returns ‘hi’
 //console.log(returnLastCharsReversed('codeup', 3)) // returns ‘pue’
 //console.log(returnLastCharsReversed('codeup', 4)) // returns ‘pued’
 
-function iBeforeE(input){
-if(input.includes('ei')) {
-return input.split('ei').join('ie');
-} else {
-return input;
-}
-}
+//function iBeforeE(input){
+//if(input.includes('ei')) {
+//return input.split('ei').join('ie');
+//} else {
+//return input;
+//}
+//}
+//
+//
+//console.log(iBeforeE('ei')); // returns ‘ie’
+//console.log(iBeforeE('height')) // returns ‘hieght’
+//console.log(iBeforeE('heist')) // returns ‘hiest’
+//console.log(iBeforeE('toetoi')) // returns ‘thier’
+//console.log(iBeforeE('theirtheir')) // returns ‘thierthier’
 
-
-console.log(iBeforeE('ei')); // returns ‘ie’
-console.log(iBeforeE('height')) // returns ‘hieght’
-console.log(iBeforeE('heist')) // returns ‘hiest’
-console.log(iBeforeE('toetoi')) // returns ‘thier’
-console.log(iBeforeE('theirtheir')) // returns ‘thierthier’
+//Create a function, filterList, that takes a list of non-negative
+//integers and strings and returns a new list with the strings filtered out.
+//function filterList(array){
+//return array.filter(Number);
+//}
+//console.log(filterList([1,2,‘a’,‘b’])); // returns [1,2]
+//filterList([1,‘a’,‘b’,0,15]) // returns [1,0,15]
+//filterList([1,2,‘aasf’,‘1’,‘123’,123]) // returns [1,2,123]
