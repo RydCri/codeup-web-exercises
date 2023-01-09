@@ -166,3 +166,23 @@
 //console.log(filterList([1,2,'a','b'])); // returns [1,2]
 //console.log(filterList([1,'a','b',0,15])); // returns [1,0,15]
 //console.log(filterList([1,2,'aasf','1','123',123])); // returns [1,2,123]
+
+//function zipArrays(array1,array2){
+//result=[];
+//for(var i = 0; i < array1.length; i++){
+//result.push(array1[i])
+//result.push(array2[i])
+//}
+//return result;
+//}
+
+//concat arrays then reorder somehow
+//function zipArrays(array1,array2){
+//let both = array1.concat(array2);
+//both.splice(2,1);
+//}
+
+//console.log(zipArrays([], [])) // returns []
+//console.log(zipArrays([1], [2])) // returns [1, 2]
+//console.log(zipArrays(['a', 'b'], ['c', 'd'])) // returns... ['a', 'c', 'b', 'd']
+//console.log(zipArrays([1,2,'a','b'], ['bob', null, 'sally', 25])) // returns... [1,2,'a','b','bob', null, 'sally', 25]
