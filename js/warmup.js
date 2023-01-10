@@ -212,8 +212,7 @@ const users = [
 
 function getUserCredentials(input){
 input.forEach(function(user){
-console.log(`Username: ${user.username}  Password: ${user.password}`)
+console.log(`Username: ${user.username} / Password: ${user.password}`);
 })
 }
-
 getUserCredentials(users);
