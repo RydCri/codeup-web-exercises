@@ -25,24 +25,42 @@
   culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="btn1">1</button>
+<button id="btn2">2</button>
+<button id="btn3">3</button>
+<button id="btn4">4</button>
 <script>
     (function() {
         "use strict";
+        var btn1 = document.getElementById('btn1')
+        var btn2 = document.getElementById('btn2')
+        var btn3 = document.getElementById('btn3')
+        var btn4 = document.getElementById('btn4')
+
+       var event1 = btn1.addEventListener('click', javaCool);
+       var event2 = btn2.addEventListener('click', makeBlue);
+       var event3 = btn3.addEventListener('click', makeGrey);
+       var event4 = btn4.addEventListener('click', dbidBlue);
         // TODO: Uncomment next line and get the main header element by id
          var mainHeader = document.getElementById('main-header');
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
 
+        function javaCool(event1) {
+        mainHeader.innerHTML = "JavaScript is Cool";
+        }
         // TODO: Uncomment the next line and get the sub header element by id
          var subHeader = document.getElementById('sub-header');
 
         // TODO: Set the text color of subHeader to blue
+        function makeBlue(event2) {
         subHeader.style.color = 'blue';
+        }
         // TODO: Uncomment the next line and get all list items
          var listItems = document.getElementsByTagName('li');
          console.log(listItems);
         // TODO: Set text color on every other list item to grey
+        function makeGrey(event3){
          var greyList = Array.from(listItems);
          console.log(greyList);
          greyList.forEach(function(e,i){
@@ -50,11 +68,14 @@
          greyList[i].style.color = '#888';
          }
          })
+         }
         // TODO: Set text color of li with dbid = 1 to blue
+        function dbidBlue(event4) {
           for (let i = 0; i < listItems.length; i++) {
           if (listItems[i].getAttribute("data-dbid") === "1") {
           listItems[i].style.color = "blue";
           }
+        }
         }
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
          var subParagraphs = document.getElementsByClassName('sub-paragraph');
